@@ -19,9 +19,8 @@ jobs:
     docker:
       - image: circleci/node:13.8.0
     steps:
-      - run: npm i
+      - checkout
       - run: npm audit
-
 
 workflows:
   my_workflow:
